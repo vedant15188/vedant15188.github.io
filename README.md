@@ -18,7 +18,7 @@ The Theme features:
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+2. Clone the repository: `git clone https://github.com/nrandecker/particle.git`
 3. Edit `_config.yml` to personalize your site.
 
 ## Site and User Settings
