@@ -11,9 +11,9 @@ email: vedant15188@gmail.com
 instagram_username: quietisgood
 github_username: vedant15188
 spotify_username: vedantkashyap97
-platforms: AWS, Microsoft Azure, NGINX, IIS, Windows Server
+platforms: AWS, Microsoft Azure, NGINX, IIS, Tomcat
 code: Python, Javascript, C++, Powershell, Bash
-tools: Git, Docker, Kubernetes, Ansible, Jenkins
+tools: Git, Docker, Kubernetes, Ansible, Jenkins, Terraform
 
 # Google-analytics
 google-analytics:
