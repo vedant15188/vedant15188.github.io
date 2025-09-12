@@ -79,3 +79,7 @@ url = "about"
 name = "Resume"
 weight = 2
 url = "resume_vedant.pdf"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
