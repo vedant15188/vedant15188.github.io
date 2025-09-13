@@ -1,0 +1,26 @@
+{{/* Get the required 'id' parameter from the shortcode call.
+It expects a value like "track/TRACK_ID" or "playlist/PLAYLIST_ID".
+*/}}
+{{ $id := .Get "id" }}
+
+{{/* Get optional 'height' and 'width' parameters, with default values.
+Spotify's standard player is 352px high, the compact one is 152px.
+*/}}
+{{ $height := .Get "height" | default "152" }}
+{{ $width := .Get "width" | default "80%" }}
+
+{{ if $id }}
+<iframe
+        data-testid="embed-iframe"
+        style="border-radius:15px"
+        src="https://open.spotify.com/embed/track/{{ $id }}"
+        width="{{ $width }}"
+        height="{{ $height }}"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+</iframe>
+{{ else }}
+{{ errorf "The 'spotify' shortcode requires an 'id' parameter. Example: {{< spotify id=\"track/1u8c2t2dt7U0fWIKI4whUH\" >}}" }}
+{{ end }}

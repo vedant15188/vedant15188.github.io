@@ -1,0 +1,85 @@
+baseurl = "https://vedant15188.github.io/"
+title = "Vedant Kashyap"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+#[services]
+#[services.disqus]
+#shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+author = "Vedant Kashyap"
+info = "Your go to DevOps guy."
+description = "Vedant's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "images/ProfilePic.jpg"
+#gravatar = "john.doe@example.com"
+
+faviconSVG = "/img/favicon.svg"
+favicon_32 = "/img/favicon-32x32.png"
+favicon_16 = "/img/favicon-16x16.png"
+
+since = 2019
+
+enableTwemoji = true
+
+colorScheme = "auto"
+hidecolorschemetoggle = false
+
+# customCSS = ["css/custom.css"]
+# customSCSS = ["scss/custom.scss"]
+# customJS = ["js/custom.js"]
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+# Social links
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/vedant15188/"
+[[params.social]]
+name = "Linkedin"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 3
+url = "https://www.linkedin.com/in/vedant-kashyap/"
+[[params.social]]
+name = "Email"
+icon = "fa-solid fa-envelope fa-2x"
+weight = 3
+url = "mailto:vedant15188@gmail.com"
+[[params.social]]
+name = "Spotify"
+icon = "fa-brands fa-spotify fa-2x"
+weight = 3
+url = "https://open.spotify.com/user/vedantkashyap97"
+
+# Menu links
+[[menu.main]]
+name = "Blog"
+weight = 1
+url  = "posts"
+[[menu.main]]
+name = "About"
+weight = 2
+url = "about"
+[[menu.main]]
+name = "Resume"
+weight = 2
+url = "resume_vedant.pdf"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

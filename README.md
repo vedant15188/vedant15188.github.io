@@ -1,71 +1,63 @@
-# Particle Jekyll Theme
+# Personal Website
 
-![](./particle.jpg)
+This is my personal website built with [Hugo](https://gohugo.io/), a fast and flexible static site generator written in Go.
 
-This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+## Theme
 
-The Theme features:
+This site uses the [hugo-coder](https://github.com/luizdepra/hugo-coder) theme, a minimalist blog theme for Hugo with a clean and responsive design.
 
-- Gulp
-- SASS
-- Sweet Scroll
-- Particle.js
-- BrowserSync
-- Font Awesome and Devicon icons
-- Google Analytics
-- Info Customization
+## Tech Stack
 
-## Basic Setup
+- **Static Site Generator**: [Hugo](https://gohugo.io/)
+- **Theme**: [hugo-coder](https://github.com/luizdepra/hugo-coder)
+- **Hosting**: GitHub Pages
+- **Domain**: [vedant15188.github.io](https://vedant15188.github.io)
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Clone the repository: `git clone https://github.com/nrandecker/particle.git`
-3. Edit `_config.yml` to personalize your site.
+## Development
 
-## Site and User Settings
+### Prerequisites
 
-You have to fill some informations on `_config.yml` to customize your site.
+- [Hugo](https://gohugo.io/installation/) (Extended version recommended)
+- [Git](https://git-scm.com/)
 
+### Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vedant15188/vedant15188.github.io.git
+   cd vedant15188.github.io
+   ```
+
+2. Start the development server:
+   ```bash
+   hugo server -D
+   ```
+
+3. Visit `http://localhost:1313` to view the site locally.
+
+### Building
+
+To build the site for production:
+
+```bash
+hugo --minify
 ```
-# Site settings
-description: A blog about lorem ipsum dolor sit amet
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:3000" # the base hostname & protocol for your site
 
-# User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-user_title: Anon Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-```
+## Deployment
 
-**Don't forget to change your url before you deploy your site!**
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-## Color and Particle Customization
-- Color Customization
-  - Edit the sass variables
-- Particle Customization
-  - Edit the json data in particle function in app.js
-  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+## Customization
 
-## Running the blog in local
+The site can be customized by modifying:
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+- `hugo.toml` - Site configuration and theme settings
+- `content/` - Page content and blog posts
+- `static/` - Static assets like images and files
+- `layouts/` - Custom layout overrides (if needed)
 
-- Install [NodeJS](https://nodejs.org/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
-- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
-- Install dependencies: `yarn`
-- Run: `gulp`
+## Resources
 
-## License
-
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
-
-## Credits
-
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [Hugo Documentation](https://gohugo.io/documentation/)
+- [Hugo-Coder Theme Documentation](https://github.com/luizdepra/hugo-coder#readme)
+- [Hugo Quick Start Guide](https://gohugo.io/getting-started/quick-start/)
