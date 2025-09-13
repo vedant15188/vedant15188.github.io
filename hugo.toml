@@ -51,7 +51,7 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/vedant15188/"
 [[params.social]]
-name = "Lknkedin"
+name = "Linkedin"
 icon = "fa-brands fa-linkedin fa-2x"
 weight = 3
 url = "https://www.linkedin.com/in/vedant-kashyap/"
