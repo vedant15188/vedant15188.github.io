@@ -17,7 +17,6 @@ style = "github-dark"
 
 [params]
 author = "Vedant Kashyap"
-info = "Your go to DevOps guy."
 description = "Vedant's personal website"
 keywords = "blog,developer,personal"
 avatarurl = "images/ProfilePic.jpg"
