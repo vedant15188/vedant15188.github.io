@@ -1,5 +1,5 @@
 +++ 
-draft = true
+draft = false
 date = 2026-06-22T00:21:00+02:00
 title = "Developers Aren't a Dashboard"
 description = "Every few years we crown a new way to measure developer productivity, and every few years it gets gamed into meaninglessness. A short, slightly annoyed tour of the treadmill, and why we keep running on it."
