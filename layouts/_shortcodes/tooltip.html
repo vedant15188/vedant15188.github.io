@@ -1,0 +1,24 @@
+{{/* Inline tooltip shortcode.
+
+Wraps the inner text in a <span> with a native browser tooltip (the `note`
+parameter) and a subtle dotted underline to hint that it's hoverable.
+
+Parameters:
+  note   (required) — the text shown on hover.
+  cursor (optional) — the mouse pointer shown on hover, as a CSS cursor value.
+                      Defaults to "help" (the question-mark pointer). Other
+                      useful values: "pointer", "default", "crosshair", "text".
+
+Paired shortcode — the visible text goes between the tags:
+  {{< tooltip note="The secret message." cursor="pointer" >}}visible text{{< /tooltip >}}
+
+Because shortcode output is injected after Markdown rendering, this works
+without enabling `markup.goldmark.renderer.unsafe`.
+*/}}
+{{ $note := .Get "note" }}
+{{ $cursor := .Get "cursor" | default "help" }}
+{{ if $note }}
+<span title="{{ $note }}" style="cursor: {{ $cursor }}; border-bottom: 1px dotted currentColor;">{{ .Inner }}</span>
+{{- else }}
+{{ errorf "The 'tooltip' shortcode requires a 'note' parameter. Example: {{< tooltip note=\"hover text\" >}}visible text{{< /tooltip >}}" }}
+{{- end }}

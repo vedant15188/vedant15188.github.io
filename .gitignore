@@ -6,3 +6,6 @@ public
 
 # Hugo cache directory (optional, can be ignored if not used locally)
 .tmp
+
+# Generated cache
+resources/_gen
