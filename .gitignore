@@ -3,3 +3,6 @@
 
 # Hugo build directory
 public
+
+# Hugo cache directory (optional, can be ignored if not used locally)
+.tmp
